@@ -1,0 +1,32 @@
+{
+    "policy": {
+        "name": "policy-api-arcadia",
+        "description": "Arcadia API",
+        "template": {
+            "name": "POLICY_TEMPLATE_API_SECURITY"
+        },
+        "enforcementMode": "blocking",
+        "server-technologies": [
+            {
+                "serverTechnologyName": "MySQL"
+            },
+            {
+                "serverTechnologyName": "Unix/Linux"
+            },
+            {
+                "serverTechnologyName": "MongoDB"
+            }
+        ],
+        "signature-settings": {
+            "signatureStaging": false
+        },
+        "policy-builder": {
+            "learnOnlyFromNonBotTraffic": false
+        },
+        "open-api-files": [
+            {
+            "link": "https://petstore3.swagger.io/api/v3/openapi.json"
+            }
+        ]
+    }
+}
